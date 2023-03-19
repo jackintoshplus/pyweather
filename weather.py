@@ -13,7 +13,7 @@ initialJSON = "";
 forecastResponse = "";
 forecastJSON = ""
 latitude = float(0.0000)
-longitude = float(0.000)
+longitude = float(0.0000)
 city = ""
 count = 0
 forecastStorage = ""
@@ -64,8 +64,8 @@ while(longitudeCheckActive):
         print("Invalid entry. Please try again.")
         continue
 
-    if(longitude < -90 or longitude > 90):
-        print("Longitude out of range [-90, 90]")
+    if(longitude < -180 or longitude > 180):
+        print("Longitude out of range [-180, 180]")
     else:
         longitudeCheckActive = False;
 
